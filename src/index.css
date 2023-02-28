@@ -1,0 +1,29 @@
+@config "../tailwind.config.cjs";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components {
+  .anchor-tag {
+    @apply px-6 !important;
+  }
+  .transform-translate-50-50 {
+    transform: translate(-50%, -50%) !important;
+  }
+  .isActive {
+    @apply font-medium hover:bg-yellow  bg-red_light !important;
+  }
+}
+
+@layer base {
+  img {
+    @apply object-cover !important;
+  }
+  li {
+    list-style-type: none !important;
+  }
+  hr {
+    @apply bg-[currentColor] opacity-25  mx-4 !important;
+  }
+}
